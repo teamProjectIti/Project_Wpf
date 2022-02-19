@@ -1,0 +1,35 @@
+﻿<Window x:Class="project_iti_wpf_market.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:project_iti_wpf_market"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="979"    Background= "CadetBlue">
+    
+        <Grid Height="359" Width="880">
+            <Button Name="btn4" Height="34" Width="102" TabIndex="23" Click="btn4_Click" Margin="490,293,288,32" HorizontalAlignment="Right" VerticalAlignment="Bottom" >add supplier</Button>
+            <Button Name="btn5" Height="34" Width="102" TabIndex="22" Click="btn5_Click"  Margin="623,293,155,32" HorizontalAlignment="Right" VerticalAlignment="Bottom" >Add Product</Button>
+            <Button Name="btn6" Height="33" Width="102" TabIndex="21" Background="Azure" Click="btn6_Click" Margin="756,294,22,32" HorizontalAlignment="Right" VerticalAlignment="Bottom" >store</Button>
+            <Button  Foreground="White" Background="DarkBlue" Name="btn1" Height="30" Width="467" TabIndex="20"  Click="btn1_Click" Margin="0,0,411,49" HorizontalAlignment="Right" VerticalAlignment="Bottom" RenderTransformOrigin="0.506,-1.838" >Edit Category</Button>
+            <Button Foreground="White" Background="DarkBlue" Name="btn2" Height="30" Width="467" TabIndex="19"  Click="btn2_Click" Margin="2,239,411,90" HorizontalAlignment="Right" VerticalAlignment="Bottom" >Add category</Button>
+            <Canvas Name="panel1" Height="276" Width="368" Margin="490,4,22,79" HorizontalAlignment="Right" VerticalAlignment="Bottom" >
+                <DataGrid   SelectionChanged="McDataGrid_SelectionChanged" Name="McDataGrid" Height="257" Width="342" Margin="-10,-12,525,100" Canvas.Left="26" Canvas.Top="9" >
+                    <DataGrid.Columns></DataGrid.Columns>
+                </DataGrid>
+            </Canvas>
+            <GroupBox Margin="0,0,411,196" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="132" Width="445" >
+                <GroupBox.Header>
+                    <TextBlock Text="Category Details"/>
+                </GroupBox.Header>
+                <Canvas Height="112" Width="452" >
+                    <TextBox Name="TextBox1" Height="20" Width="250" TabIndex="17" Margin="182,15,448,324" HorizontalAlignment="Right" VerticalAlignment="Bottom" TextWrapping="Wrap" ></TextBox>
+                    <Label Name="label4" Height="34" Width="166" FontSize="11" FontFamily="Microsoft Sans Serif" TabIndex="16" Margin="18,15,696,310" HorizontalAlignment="Right" VerticalAlignment="Bottom" >category Name</Label>
+                    <Label Name="label1" Height="34" Width="129" FontSize="11" FontFamily="Microsoft Sans Serif" TabIndex="12" Margin="18,72,733,253" HorizontalAlignment="Right" VerticalAlignment="Bottom" >Description</Label>
+                    <TextBox Name="TextBox2" Height="20" Width="250" TabIndex="9"  Margin="182,72,448,267" HorizontalAlignment="Right" VerticalAlignment="Bottom" TextWrapping="Wrap" ></TextBox>
+                </Canvas>
+            </GroupBox>
+            <Button  Foreground="White" Background="DarkBlue" Click="button3_Click" Name="button3" Height="30" Width="467" TabIndex="16" Margin="2,327,411,2" >Remove Category</Button>
+        </Grid>
+    
+</Window>
