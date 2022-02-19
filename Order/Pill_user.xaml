@@ -5,8 +5,106 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:project_iti_wpf_market.Order"
         mc:Ignorable="d"
-        Title="Pill_user" Height="450" Width="800">
-    <Grid>
-        
+   Title="Main Window"  Height="660" Width="1070">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black"/>
+            <GradientStop Color="#FF2A467D" Offset="1"/>
+            <GradientStop Color="#FF172644" Offset="0.55"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Window.BorderBrush>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black"/>
+            <GradientStop Color="#FFC57B7B" Offset="1"/>
+            <GradientStop Color="#FF543434" Offset="0.43"/>
+        </LinearGradientBrush>
+    </Window.BorderBrush>
+        <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200" ></RowDefinition>
+            <RowDefinition Height="300"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="350"></ColumnDefinition>
+            <ColumnDefinition Width="350"></ColumnDefinition>
+            <ColumnDefinition Width="350"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <GroupBox Foreground="White" Header="User" Grid.Row="0" Grid.Column="0" Width="330" Height="180" BorderBrush="Black">
+            <StackPanel>
+                <Label Foreground="White">name user</Label>
+                <TextBox Width="250" Height="20"></TextBox>
+
+                <Label Foreground="White">phone</Label>
+                <TextBox Name="txtphone" Width="250" Height="20"></TextBox>
+
+                <Label Foreground="White">Address</Label>
+                <TextBox Name="address" Width="250" Height="20"></TextBox>
+
+
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox Foreground="White" Header="details pill" Grid.Row="0" Grid.Column="1" Width="330" Height="180" BorderBrush="Black">
+            <StackPanel>
+                <Label Foreground="White">name user</Label>
+                <TextBox Width="250" Height="20"></TextBox>
+
+                <Label Foreground="White">phone</Label>
+                <TextBox Name="txtpho" Width="250" Height="20"></TextBox>
+
+                <Label Foreground="White">Address</Label>
+                <TextBox Name="a" Width="250" Height="20"></TextBox>
+
+
+            </StackPanel>
+        </GroupBox>
+
+
+        <GroupBox Foreground="White"  Header="Details Product" Grid.Row="0" Grid.Column="2" Width="330" Height="180" BorderBrush="Blue">
+            <StackPanel>
+                <Label Foreground="White">name user</Label>
+                <TextBox Width="250" Height="20"></TextBox>
+
+                <Label Foreground="White">phone</Label>
+                <TextBox Name="txtph" Width="250" Height="20"></TextBox>
+
+                <Label Foreground="White">Address</Label>
+                <TextBox Name="ahj" Width="250" Height="20"></TextBox>
+
+            </StackPanel>
+        </GroupBox>
+
+        <ScrollViewer  Padding="10" Grid.Row="1" Grid.ColumnSpan="3">
+            <GroupBox Header="All Product" Padding="10"  BorderBrush="Brown">
+                <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}"/>
+            </GroupBox>
+        </ScrollViewer>
+
+
+
+
+        <GroupBox Grid.Row="2" Height="90" Grid.Column="1" Grid.ColumnSpan="2"   Width="515">
+            <WrapPanel >
+                <Button Width="100" Margin="10" FontWeight="Bold" Padding="10"   Cursor="Hand" Foreground="Blue" Content="New pill"/>
+                <Button Width="100" Margin="10" FontWeight="Bold" Padding="10"  BorderBrush="DarkGreen" Cursor="Hand" Foreground="Blue">Save</Button>
+                <Button Width="100" Margin="10" FontWeight="Bold" Padding="10"  BorderBrush="DarkGreen" Cursor="Hand" Foreground="Blue">Save</Button>
+                <Button Width="100" Margin="10" FontWeight="Bold" Padding="10"  BorderBrush="DarkGreen" Cursor="Hand" Foreground="Blue">Save</Button>
+            </WrapPanel>
+        </GroupBox>
+
+        <GroupBox   Padding="10"  Height="60" Grid.Row="2" Grid.Column="0" BorderBrush="Brown" Width="300">
+            <WrapPanel>
+                <Label Foreground="White">total money</Label>
+                <TextBox IsReadOnly="True" Name="txtpne" Padding="5" Width="160" Height="20"></TextBox>
+            </WrapPanel>
+        </GroupBox>
+
+
+
     </Grid>
 </Window>
