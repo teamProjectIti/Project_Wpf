@@ -6,26 +6,26 @@
         xmlns:local="clr-namespace:project_iti_wpf_market.security"
         mc:Ignorable="d"
         Title="Users" Height="450" Width="800">
-    <Grid>
-        <Label Content="                            Market 's Users" HorizontalAlignment="Center" Margin="0,39,0,0" VerticalAlignment="Top" Width="312"/>
-        <Label Content="ID" HorizontalAlignment="Left" Margin="21,111,0,0" VerticalAlignment="Top" Width="66" Height="25" RenderTransformOrigin="0.465,-1.27" FontWeight="Bold"/>
-        <Label Content="Name" HorizontalAlignment="Left" Margin="21,150,0,0" VerticalAlignment="Top" Width="49" Height="25" FontWeight="Bold"/>
-        <Label Content="Phone" HorizontalAlignment="Left" Margin="18,195,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.841,0.536" Width="52" FontWeight="Bold"/>
-        <Label Content="Email" HorizontalAlignment="Left" Margin="21,232,0,0" VerticalAlignment="Top" RenderTransformOrigin="-6.885,-0.414" Width="49" Height="25" FontWeight="Bold"/>
-        <Label Content="Address" HorizontalAlignment="Right" Margin="0,273,730,0" VerticalAlignment="Top" Width="60" Height="34" FontWeight="Bold"/>
-        <TextBox x:Name="id_txt" HorizontalAlignment="Left" Margin="75,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237" RenderTransformOrigin="-1.407,2.163" />
-        <TextBox x:Name="Name_txt" HorizontalAlignment="Left" Margin="75,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237" RenderTransformOrigin="-1.407,2.163"/>
-        <TextBox x:Name="Email_txt" HorizontalAlignment="Left" Margin="75,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237" RenderTransformOrigin="-1.407,2.163"/>
-        <TextBox x:Name="address_txt" HorizontalAlignment="Left" Margin="75,281,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237" RenderTransformOrigin="-1.407,2.163"/>
-        <TextBox x:Name="phone_txt" HorizontalAlignment="Left" Margin="75,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237" RenderTransformOrigin="-1.407,2.163"/>
-        <Label  Content="Id"   HorizontalAlignment="Left" Margin="21,111,0,0" VerticalAlignment="Top" Width="49" Height="25" RenderTransformOrigin="0.465,-1.27" FontWeight="Bold"/>
+    <Grid Background="{DynamicResource {x:Static SystemColors.MenuHighlightBrushKey}}">
+        <Label Content="Market 's Users" HorizontalAlignment="Center" Margin="0,39,0,0" VerticalAlignment="Top" Width="182" Background="{DynamicResource {x:Static SystemColors.MenuHighlightBrushKey}}" Foreground="#FF000FDA" FontSize="20" FontWeight="Bold" FontFamily="MV Boli" Cursor="Hand"/>
+        <Label Content="ID" HorizontalAlignment="Left" Margin="21,111,0,0" VerticalAlignment="Top" Width="66" Height="25" RenderTransformOrigin="0.465,-1.27" FontWeight="Bold" Foreground="#FF1723DC"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="21,150,0,0" VerticalAlignment="Top" Width="49" Height="25" FontWeight="Bold" Foreground="#FF1723DC"/>
+        <Label Content="Phone" HorizontalAlignment="Left" Margin="18,195,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.841,0.536" Width="52" FontWeight="Bold" Foreground="#FF1723DC"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="21,232,0,0" VerticalAlignment="Top" RenderTransformOrigin="-6.885,-0.414" Width="49" Height="25" FontWeight="Bold" Foreground="#FF1723DC"/>
+        <Label Content="Address" HorizontalAlignment="Right" Margin="0,275,725,0" VerticalAlignment="Top" Width="54" Height="34" FontWeight="Bold" Foreground="#FF1723DC"/>
+        <TextBox x:Name="id_txt" HorizontalAlignment="Left" Margin="75,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237" RenderTransformOrigin="-1.407,2.163" Height="22" />
+        <TextBox x:Name="Name_txt" HorizontalAlignment="Left" Margin="75,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237" RenderTransformOrigin="-1.407,2.163" Height="22"/>
+        <TextBox x:Name="Email_txt" HorizontalAlignment="Left" Margin="75,235,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237" RenderTransformOrigin="-1.407,2.163" Height="22"/>
+        <TextBox x:Name="address_txt" HorizontalAlignment="Left" Margin="75,281,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237" RenderTransformOrigin="-1.407,2.163" Height="22"/>
+        <TextBox x:Name="phone_txt" HorizontalAlignment="Left" Margin="75,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237" RenderTransformOrigin="-1.407,2.163" Height="22"/>
         <!--<DataGrid x:Name="DataGridView" AutoGenerateColumns="true" HorizontalAlignment="Left" Margin="344,88,0,111" Width="419" SelectionChanged="DataGridView_SelectionChanged" Loaded="DataGridView_Loaded"/>-->
 
 
-        <Button x:Name="updateBtn" Content="UpDate" HorizontalAlignment="Left" Margin="237,359,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.837,0.002" Width="87" Height="30" FontWeight="Bold" Click="updateBtn_Click"/>
-        <DataGrid Name="dvg_users"  Margin="339,86,25,105" MouseDoubleClick="dvg_users_MouseDoubleClick" SelectedCellsChanged="dvg_users_SelectedCellsChanged" SelectionChanged="dvg_users_SelectionChanged"/>
-        <Button x:Name="InsertBtn" Content="Insert"  HorizontalAlignment="Left" Margin="54,363,0,0" VerticalAlignment="Top" Height="26" Width="95" Click="Btn_insert"/>
-        <Button x:Name="ClearBtn" Content="clear" HorizontalAlignment="Left" Margin="605,359,0,0" VerticalAlignment="Top" Height="30" Width="106" Click="ClearBtn_Click"/>
+        <Button x:Name="updateBtn" Content="UpDate" HorizontalAlignment="Left" Margin="228,359,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.837,0.002" Width="100" Height="34" FontWeight="Bold" Click="updateBtn_Click" FontSize="14" Background="#FF000FFF" Foreground="#FFF6EFEF"/>
+        <DataGrid Name="dvg_users"  Margin="339,86,25,99" MouseDoubleClick="dvg_users_MouseDoubleClick" SelectedCellsChanged="dvg_users_SelectedCellsChanged" SelectionChanged="dvg_users_SelectionChanged"/>
+        <Button x:Name="InsertBtn" Content="Insert"  HorizontalAlignment="Left" Margin="54,359,0,0" VerticalAlignment="Top" Height="34" Width="100" Click="Btn_insert" FontWeight="Bold" FontSize="14" Background="#FF000FFF" Foreground="#FFFCFCFF"/>
+        <Button x:Name="ClearBtn" Content="Delete" HorizontalAlignment="Left" Margin="409,359,0,0" VerticalAlignment="Top" Height="34" Width="100" Click="ClearBtn_Click" FontWeight="Bold" FontSize="14" Background="#FF000FFF" Foreground="#FFF9F1F1"/>
+        <Button x:Name="ClearRowBtn" Content="Clear" HorizontalAlignment="Left" Margin="594,359,0,0" VerticalAlignment="Top" Width="100" Height="34" Click="ClearRowBtn_Click" FontWeight="Bold" FontSize="14" Background="#FF000FFF" Foreground="#FFF7F3F3"/>
 
     </Grid>
 </Window>

@@ -84,7 +84,12 @@ namespace project_iti_wpf_market.security
         }
         void clear()
         {
-            Name_txt.Text = address_txt.Text = Email_txt.Text = phone_txt.Text = "";
+            id_txt.Text =Name_txt.Text = address_txt.Text = Email_txt.Text = phone_txt.Text = "";
+        }
+
+        private void ClearRowBtn_Click(object sender, RoutedEventArgs e)
+        {
+            clear();
         }
     }
 
