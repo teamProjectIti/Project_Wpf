@@ -29,9 +29,10 @@ namespace project_iti_wpf_market
         public Window1()
         {
             InitializeComponent();
+            instance2 = this;
         }
 
-        public static List<Category> fillcategory()
+        public  List<Category> fillcategory()
         {
 
             return categories;
@@ -56,17 +57,19 @@ namespace project_iti_wpf_market
 
         private void btn4_Click(object sender, RoutedEventArgs e)
         {
-
+            supplier s = new supplier();
+            s.Show();
         }
 
         private void btn5_Click(object sender, RoutedEventArgs e)
         {
-
+            MarketProduct m = new MarketProduct();
+            m.Show();
         }
 
         private void btn6_Click(object sender, RoutedEventArgs e)
         {
-
+          
         }
 
         private void btn1_Click(object sender, RoutedEventArgs e)

@@ -21,9 +21,11 @@ namespace project_iti_wpf_market
     public partial class Window2 : Window
     {
         static List<store> stores = new List<store>();
+        public static Window2 instance;
         public Window2()
         {
             InitializeComponent();
+            instance = this;
         }
         int counter = 0;
         int id = 0;
@@ -62,7 +64,7 @@ namespace project_iti_wpf_market
             textname.Text = textadd.Text = textphone.Text = "";
         }
 
-        public static List<store> fillstore()
+        public List<store> fillstore()
         {
 
             return stores;
