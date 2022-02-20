@@ -1,0 +1,31 @@
+﻿<Window x:Class="project_iti_wpf_market.security.Users"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:project_iti_wpf_market.security"
+        mc:Ignorable="d"
+        Title="Users" Height="450" Width="800">
+    <Grid>
+        <Label Content="                            Market 's Users" HorizontalAlignment="Center" Margin="0,39,0,0" VerticalAlignment="Top" Width="312"/>
+        <Label Content="ID" HorizontalAlignment="Left" Margin="21,111,0,0" VerticalAlignment="Top" Width="66" Height="25" RenderTransformOrigin="0.465,-1.27" FontWeight="Bold"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="21,150,0,0" VerticalAlignment="Top" Width="49" Height="25" FontWeight="Bold"/>
+        <Label Content="Phone" HorizontalAlignment="Left" Margin="18,195,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.841,0.536" Width="52" FontWeight="Bold"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="21,232,0,0" VerticalAlignment="Top" RenderTransformOrigin="-6.885,-0.414" Width="49" Height="25" FontWeight="Bold"/>
+        <Label Content="Address" HorizontalAlignment="Right" Margin="0,273,730,0" VerticalAlignment="Top" Width="60" Height="34" FontWeight="Bold"/>
+        <TextBox x:Name="id_txt" HorizontalAlignment="Left" Margin="75,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237" RenderTransformOrigin="-1.407,2.163" />
+        <TextBox x:Name="Name_txt" HorizontalAlignment="Left" Margin="75,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237" RenderTransformOrigin="-1.407,2.163"/>
+        <TextBox x:Name="Email_txt" HorizontalAlignment="Left" Margin="75,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237" RenderTransformOrigin="-1.407,2.163"/>
+        <TextBox x:Name="address_txt" HorizontalAlignment="Left" Margin="75,281,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237" RenderTransformOrigin="-1.407,2.163"/>
+        <TextBox x:Name="phone_txt" HorizontalAlignment="Left" Margin="75,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237" RenderTransformOrigin="-1.407,2.163"/>
+        <Label  Content="Id"   HorizontalAlignment="Left" Margin="21,111,0,0" VerticalAlignment="Top" Width="49" Height="25" RenderTransformOrigin="0.465,-1.27" FontWeight="Bold"/>
+        <!--<DataGrid x:Name="DataGridView" AutoGenerateColumns="true" HorizontalAlignment="Left" Margin="344,88,0,111" Width="419" SelectionChanged="DataGridView_SelectionChanged" Loaded="DataGridView_Loaded"/>-->
+
+
+        <Button x:Name="updateBtn" Content="UpDate" HorizontalAlignment="Left" Margin="237,359,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.837,0.002" Width="87" Height="30" FontWeight="Bold" Click="updateBtn_Click"/>
+        <DataGrid Name="dvg_users"  Margin="339,86,25,105" MouseDoubleClick="dvg_users_MouseDoubleClick" SelectedCellsChanged="dvg_users_SelectedCellsChanged" SelectionChanged="dvg_users_SelectionChanged"/>
+        <Button x:Name="InsertBtn" Content="Insert"  HorizontalAlignment="Left" Margin="54,363,0,0" VerticalAlignment="Top" Height="26" Width="95" Click="Btn_insert"/>
+        <Button x:Name="ClearBtn" Content="clear" HorizontalAlignment="Left" Margin="605,359,0,0" VerticalAlignment="Top" Height="30" Width="106"/>
+
+    </Grid>
+</Window>

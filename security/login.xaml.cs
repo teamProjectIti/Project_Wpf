@@ -23,5 +23,10 @@ namespace project_iti_wpf_market.security
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
