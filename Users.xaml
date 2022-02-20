@@ -25,7 +25,7 @@
         <Button x:Name="updateBtn" Content="UpDate" HorizontalAlignment="Left" Margin="237,359,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.837,0.002" Width="87" Height="30" FontWeight="Bold" Click="updateBtn_Click"/>
         <DataGrid Name="dvg_users"  Margin="339,86,25,105" MouseDoubleClick="dvg_users_MouseDoubleClick" SelectedCellsChanged="dvg_users_SelectedCellsChanged" SelectionChanged="dvg_users_SelectionChanged"/>
         <Button x:Name="InsertBtn" Content="Insert"  HorizontalAlignment="Left" Margin="54,363,0,0" VerticalAlignment="Top" Height="26" Width="95" Click="Btn_insert"/>
-        <Button x:Name="ClearBtn" Content="clear" HorizontalAlignment="Left" Margin="605,359,0,0" VerticalAlignment="Top" Height="30" Width="106"/>
+        <Button x:Name="ClearBtn" Content="clear" HorizontalAlignment="Left" Margin="605,359,0,0" VerticalAlignment="Top" Height="30" Width="106" Click="ClearBtn_Click"/>
 
     </Grid>
 </Window>

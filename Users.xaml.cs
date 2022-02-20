@@ -34,6 +34,8 @@ namespace project_iti_wpf_market.security
                 UsersList.Add(c);
                 dvg_users.ItemsSource = null;
                 dvg_users.ItemsSource = UsersList;
+                clear();
+
             }
             else
              {
@@ -43,38 +45,46 @@ namespace project_iti_wpf_market.security
 
         private void updateBtn_Click(object sender, RoutedEventArgs e)
         {
+            var list = UsersList.Where(x=>x.ID==id).FirstOrDefault();
+            list.Name= Name_txt.Text;
+            list.address = address_txt.Text;
+            list.phone=phone_txt.Text;
+            list.email=Email_txt.Text;
+            dvg_users.ItemsSource = null;
+            dvg_users.ItemsSource = UsersList;
+            clear();
 
         }
         int id = 0;
         private void dvg_users_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            var d = dvg_users.SelectedItem;
-            id = int.Parse((dvg_users.SelectedCells[0].Column.GetCellContent(d) as TextBlock).Text);
-            string name = (dvg_users.SelectedCells[1].Column.GetCellContent(d) as TextBlock).Text;
-            string description = (dvg_users.SelectedCells[2].Column.GetCellContent(d) as TextBlock).Text;
-            Name_txt.Text = name;
-            Email_txt.Text = description;
+            ClassUsers d = (ClassUsers)dvg_users.SelectedItem;
+            id = d.ID;
+            Name_txt.Text = d.Name;
+            address_txt.Text = d.address;
+            phone_txt.Text = d.phone;
+            Email_txt.Text = d.email;
         }
 
         private void dvg_users_SelectedCellsChanged(object sender, SelectedCellsChangedEventArgs e)
         {
-            //var d = dvg_users.SelectedItem;
-            //id = int.Parse((dvg_users.SelectedCells[0].Column.GetCellContent(d) as TextBlock).Text);
-            //string name = (dvg_users.SelectedCells[1].Column.GetCellContent(d) as TextBlock).Text;
-            //string description = (dvg_users.SelectedCells[2].Column.GetCellContent(d) as TextBlock).Text;
-            //Name_txt.Text = name;
-            //Email_txt.Text = description;
-
         }
 
         private void dvg_users_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            var d = dvg_users.SelectedItem;
-            id = int.Parse((dvg_users.SelectedCells[0].Column.GetCellContent(d) as TextBlock).Text);
-            string name = (dvg_users.SelectedCells[1].Column.GetCellContent(d) as TextBlock).Text;
-            string description = (dvg_users.SelectedCells[2].Column.GetCellContent(d) as TextBlock).Text;
-            Name_txt.Text = name;
-            Email_txt.Text = description;
+        }
+
+        private void ClearBtn_Click(object sender, RoutedEventArgs e)
+        {
+            var list = UsersList.Where(x => x.ID == id).FirstOrDefault();
+            UsersList.Remove(list);
+            dvg_users.ItemsSource = null;
+            dvg_users.ItemsSource = UsersList;
+            clear();
+        }
+        void clear()
+        {
+            Name_txt.Text = address_txt.Text = Email_txt.Text = phone_txt.Text = "";
         }
     }
 
