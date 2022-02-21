@@ -39,6 +39,9 @@ namespace project_iti_wpf_market.security
             {
                 ClassLogin l = new ClassLogin(++counter, textName.Text, txtPassword.Password);
                 loginList.Add(l);
+                MainWindow window = new MainWindow();   
+                window.Show();
+                this.Close();  
 
                 clear();
 

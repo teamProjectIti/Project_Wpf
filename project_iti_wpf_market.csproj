@@ -9,12 +9,17 @@
 
   <ItemGroup>
     <None Remove="photo\images %285%29.png" />
+    <None Remove="store.jpg" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="photo\images (5).png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="store.jpg" />
   </ItemGroup>
 
 </Project>

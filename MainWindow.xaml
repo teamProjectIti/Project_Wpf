@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:project_iti_wpf_market"
         mc:Ignorable="d"
-         Title="MainWindow" Height="950" Width="1200">
-    <Grid>
-        <Button FontSize="22" Content="category" HorizontalAlignment="Left" Margin="124,95,0,0" VerticalAlignment="Top" Height="68" Width="153" Cursor="Hand" IsDefault="True" FontFamily="Sitka Text" Foreground="#FFF3EAEA" Click="Button_Click">
+         Title="MainWindow" Height="582" Width="907">
+    <Grid Margin="0,0,0,-6">
+        <Button FontSize="24" Content="category" HorizontalAlignment="Left" Margin="23,23,0,0" VerticalAlignment="Top" Height="68" Width="196" Cursor="Hand" IsDefault="True" FontFamily="Sitka Text" Foreground="#FFF3EAEA" Click="Button_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
@@ -15,7 +15,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button FontSize="22" Content="Product" HorizontalAlignment="Left" Margin="331,95,0,0" VerticalAlignment="Top" Height="68" Width="153" Cursor="Hand" IsDefault="True" FontFamily="Sitka Text" Foreground="#FFF3EAEA" Click="Button_Click_1">
+        <Button FontSize="24" Content="Product" HorizontalAlignment="Left" Margin="243,23,0,0" VerticalAlignment="Top" Height="68" Width="200" Cursor="Hand" IsDefault="True" FontFamily="Sitka Text" Foreground="#FFF3EAEA" Click="Button_Click_1">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
@@ -23,7 +23,15 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button FontSize="22" Content="Security" HorizontalAlignment="Center" Margin="0,89,0,0" VerticalAlignment="Top" Height="68" Width="152" Cursor="Hand" IsDefault="True" FontFamily="Sitka Text" Foreground="#FFF3EAEA" Click="Button_Click_7">
+        <Button FontSize="24" Content="Security" HorizontalAlignment="Left" Margin="465,27,0,0" VerticalAlignment="Top" Height="64" Width="186" Cursor="Hand" IsDefault="True" FontFamily="Sitka Text" Foreground="#FFF3EAEA" Click="Button_Click_7" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-1.574"/>
+                    <RotateTransform Angle="1.109"/>
+                    <TranslateTransform X="0.04" Y="-2.088"/>
+                </TransformGroup>
+            </Button.RenderTransform>
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
@@ -31,7 +39,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button FontSize="22" Content="Pill user" HorizontalAlignment="Left" Margin="331,195,0,0" VerticalAlignment="Top" Height="68" Width="153" Cursor="Hand" IsDefault="True" FontFamily="Sitka Text" Foreground="#FFF3EAEA" Click="Button_Click_6">
+        <Button FontSize="24" Content="Bill user" HorizontalAlignment="Left" Margin="23,117,0,0" VerticalAlignment="Top" Height="67" Width="196" Cursor="Hand" IsDefault="True" FontFamily="Sitka Text" Foreground="#FFF3EAEA" Click="Button_Click_6">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
@@ -39,7 +47,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button FontSize="22" Content="Users" HorizontalAlignment="Center" Margin="0,189,0,0" VerticalAlignment="Top" Height="68" Width="152" Cursor="Hand" IsDefault="True" FontFamily="Sitka Text" Foreground="#FFF3EAEA" Click="Button_Click_2">
+        <Button FontSize="24" Content="Users" HorizontalAlignment="Left" Margin="24,218,0,0" VerticalAlignment="Top" Height="65" Width="194" Cursor="Hand" IsDefault="True" FontFamily="Sitka Text" Foreground="#FFF3EAEA" Click="Button_Click_2">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
@@ -47,7 +55,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button FontSize="22" Content="supplieries" HorizontalAlignment="Left" Margin="711,88,0,0" VerticalAlignment="Top" Height="68" Width="152" Cursor="Hand" IsDefault="True" FontFamily="Sitka Text" Foreground="#FFF3EAEA" Click="Button_Click_3">
+        <Button FontSize="24" Content="Supplieres" HorizontalAlignment="Left" Margin="666,23,0,0" VerticalAlignment="Top" Height="68" Width="217" Cursor="Hand" IsDefault="True" FontFamily="Sitka Text" Foreground="#FFF3EAEA" Click="Button_Click_3">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
@@ -55,7 +63,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button FontSize="22" Content="Store" HorizontalAlignment="Left" Margin="724,183,0,0" VerticalAlignment="Top" Height="68" Width="153" Cursor="Hand" IsDefault="True" FontFamily="Sitka Text" Foreground="#FFF3EAEA" Click="Button_Click_4">
+        <Button FontSize="24" Content="Store" HorizontalAlignment="Left" Margin="23,322,0,0" VerticalAlignment="Top" Height="66" Width="193" Cursor="Hand" IsDefault="True" FontFamily="Sitka Text" Foreground="#FFF3EAEA" Click="Button_Click_4">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
@@ -63,14 +71,15 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button FontSize="35" Content="Pill Suoliers" HorizontalAlignment="Left" Margin="132,202,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Emoji" Foreground="#FFF5F2F2" Click="Button_Click_8">
+        <Button FontSize="24" Content="Bill Supplier" HorizontalAlignment="Left" Margin="24,424,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Emoji" Foreground="#FFF5F2F2" Click="Button_Click_8" Height="78" Width="196" RenderTransformOrigin="-3.925,7.804" FontWeight="Bold">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
-                    <GradientStop Color="#FF23DEEC" Offset="1"/>
+                    <GradientStop Color="#FF128EED" Offset="1"/>
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
+        <Image HorizontalAlignment="Left" Height="436" Margin="243,117,0,0" VerticalAlignment="Top" Width="640" Source="/store.jpg" RenderTransformOrigin="0.703,0.569"/>
 
     </Grid>
 </Window>

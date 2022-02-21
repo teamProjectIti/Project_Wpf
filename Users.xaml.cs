@@ -82,6 +82,10 @@ namespace project_iti_wpf_market.security
             dvg_users.ItemsSource = UsersList;
             clear();
         }
+        List<ClassUsers> RETURNUSERLST()
+        {
+            return UsersList;
+        }
         void clear()
         {
             id_txt.Text =Name_txt.Text = address_txt.Text = Email_txt.Text = phone_txt.Text = "";
