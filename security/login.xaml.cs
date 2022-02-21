@@ -19,14 +19,34 @@ namespace project_iti_wpf_market.security
     /// </summary>
     public partial class login : Window
     {
+
+        List<ClassLogin> loginList = new List<ClassLogin>();
+
         public login()
         {
             InitializeComponent();
         }
+        void clear()
+        {
+            textName.Text = "";
+            txtPassword.Password = "";
+        }
 
+        int counter = 0;
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            if (textName.Text != "" && txtPassword.Password != "")
+            {
+                ClassLogin l = new ClassLogin(++counter, textName.Text, txtPassword.Password);
+                loginList.Add(l);
 
+                clear();
+
+            }
+            else
+            {
+                MessageBox.Show("plz insert vaild data");
+            }
         }
     }
 }
