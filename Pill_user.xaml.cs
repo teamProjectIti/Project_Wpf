@@ -34,8 +34,22 @@ namespace project_iti_wpf_market.Order
         List<Pill_userClass> list_pil_user= new List<Pill_userClass>();
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            
             DateTime dateTime = DateTime.Now;
-            Pill_userClass pill = new Pill_userClass(++counter,Convert.ToDouble(txtprice.Text),int.Parse(txtQountity.Text),Convert.ToDouble(txtSum),int.Parse(txtdescound.Text), txtDetails.Text, txt_casher.Text,txtnameUser.Text,txtEmail.Text,txtphone.Text, dateTime);
+            list_pil_user.Add(new Pill_userClass
+            {
+                ID_bill = ++counter,
+                name_product = compoText.Text,
+                Name_Caher = txt_casher.Text,
+                date_Bill = dateTime,
+                Email = txtEmail.Text,
+                Descound = Convert.ToInt32(txtdescound.Text),
+                Phone=txtphone.Text,
+                price=int.Parse(txtprice.Text),
+                Qountity=Convert.ToInt32(txtQountity.Text),
+                Sum_Total=int.Parse(txtSum.Text)
+
+            };
             datagridview.ItemsSource = null;
             datagridview.ItemsSource = list_pil_user.ToList();
         }
