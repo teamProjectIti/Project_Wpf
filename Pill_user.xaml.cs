@@ -44,12 +44,13 @@ namespace project_iti_wpf_market.Order
                 date_Bill = dateTime,
                 Email = txtEmail.Text,
                 Descound = Convert.ToInt32(txtdescound.Text),
-                Phone=txtphone.Text,
-                price=int.Parse(txtprice.Text),
-                Qountity=Convert.ToInt32(txtQountity.Text),
-                Sum_Total=int.Parse(txtSum.Text)
-
-            };
+                Phone = txtphone.Text,
+                price = int.Parse(txtprice.Text),
+                Qountity = Convert.ToInt32(txtQountity.Text),
+                Sum_Total = int.Parse(txtSum.Text),
+                Details_Bill=txtDetails.Text,
+                Name=compoText.Text
+            });
             datagridview.ItemsSource = null;
             datagridview.ItemsSource = list_pil_user.ToList();
         }

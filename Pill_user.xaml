@@ -94,9 +94,8 @@
 
         <GroupBox Grid.Row="2" Height="90" Grid.Column="1" Grid.ColumnSpan="2"   Width="515">
             <WrapPanel >
-                <Button Width="100" Margin="10" FontWeight="Bold" Padding="10"   Cursor="Hand" Foreground="Blue" Content="New pill"/>
                 <Button Width="100" Margin="10" FontWeight="Bold" Padding="10"  BorderBrush="DarkGreen" Cursor="Hand" Foreground="Blue">Save</Button>
-                <Button Width="100" Margin="10" FontWeight="Bold" Padding="10"  BorderBrush="DarkGreen" Cursor="Hand" Foreground="Blue" Click="Button_Click">Save</Button>
+                <Button Width="100" Margin="10" FontWeight="Bold" Padding="10"  BorderBrush="DarkGreen" Cursor="Hand" Foreground="Blue" Click="Button_Click">]delete</Button>
             </WrapPanel>
         </GroupBox>
 
