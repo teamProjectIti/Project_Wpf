@@ -5,8 +5,72 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:project_iti_wpf_market"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+         Title="MainWindow" Height="950" Width="1200">
     <Grid>
+        <Button FontSize="22" Content="category" HorizontalAlignment="Left" Margin="124,95,0,0" VerticalAlignment="Top" Height="68" Width="153" Cursor="Hand" IsDefault="True" FontFamily="Sitka Text" Foreground="#FFF3EAEA" Click="Button_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF128EED" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button FontSize="22" Content="Product" HorizontalAlignment="Left" Margin="331,95,0,0" VerticalAlignment="Top" Height="68" Width="153" Cursor="Hand" IsDefault="True" FontFamily="Sitka Text" Foreground="#FFF3EAEA" Click="Button_Click_1">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF128EED" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button FontSize="22" Content="Security" HorizontalAlignment="Center" Margin="0,89,0,0" VerticalAlignment="Top" Height="68" Width="152" Cursor="Hand" IsDefault="True" FontFamily="Sitka Text" Foreground="#FFF3EAEA" Click="Button_Click_7">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF128EED" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button FontSize="22" Content="Pill user" HorizontalAlignment="Left" Margin="331,195,0,0" VerticalAlignment="Top" Height="68" Width="153" Cursor="Hand" IsDefault="True" FontFamily="Sitka Text" Foreground="#FFF3EAEA" Click="Button_Click_6">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF128EED" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button FontSize="22" Content="Users" HorizontalAlignment="Center" Margin="0,189,0,0" VerticalAlignment="Top" Height="68" Width="152" Cursor="Hand" IsDefault="True" FontFamily="Sitka Text" Foreground="#FFF3EAEA" Click="Button_Click_2">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF128EED" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button FontSize="22" Content="supplieries" HorizontalAlignment="Left" Margin="711,88,0,0" VerticalAlignment="Top" Height="68" Width="152" Cursor="Hand" IsDefault="True" FontFamily="Sitka Text" Foreground="#FFF3EAEA" Click="Button_Click_3">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF128EED" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button FontSize="22" Content="Store" HorizontalAlignment="Left" Margin="724,183,0,0" VerticalAlignment="Top" Height="68" Width="153" Cursor="Hand" IsDefault="True" FontFamily="Sitka Text" Foreground="#FFF3EAEA" Click="Button_Click_4">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF128EED" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button FontSize="35" Content="Pill Suoliers" HorizontalAlignment="Left" Margin="132,202,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Emoji" Foreground="#FFF5F2F2" Click="Button_Click_8">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF23DEEC" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Window>

@@ -4,8 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:project_iti_wpf_market.Order"
-        mc:Ignorable="d"
-   Title="Main Window"  Height="660" Width="1070">
+       mc:Ignorable="d"
+          Title="Main Window"  Height="660" Width="1070">
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
             <GradientStop Color="Black"/>
@@ -20,7 +20,7 @@
             <GradientStop Color="#FF543434" Offset="0.43"/>
         </LinearGradientBrush>
     </Window.BorderBrush>
-        <Grid>
+    <Grid>
 
         <Grid.RowDefinitions>
             <RowDefinition Height="200" ></RowDefinition>
@@ -65,23 +65,29 @@
         </GroupBox>
 
 
-        <GroupBox Foreground="White"  Header="Details Product" Grid.Row="0" Grid.Column="2" Width="330" Height="180" BorderBrush="Blue">
+        <GroupBox Foreground="White"  Header="Details Product" Grid.Row="0" Grid.Column="2" Width="330" BorderBrush="Blue" Margin="10,10,10,10" Grid.RowSpan="2">
             <StackPanel>
-                <Label Foreground="White">name user</Label>
-                <TextBox Width="250" Height="20"></TextBox>
+                <Label Foreground="White" Height="30">Name Product</Label>
+                <ComboBox Width="250" Height="30" Margin="24"  Name="compoText" HorizontalAlignment="Left"  VerticalAlignment="Top"/>
 
-                <Label Foreground="White">phone</Label>
-                <TextBox Name="txtph" Width="250" Height="20"></TextBox>
+                <Label Foreground="White" Height="30">price</Label>
+                <TextBox Name="txtph" Width="250" Height="30"></TextBox>
 
-                <Label Foreground="White">Address</Label>
-                <TextBox Name="ahj" Width="250" Height="20"></TextBox>
+                <Label Foreground="White" Height="30">qountity</Label>
+                <TextBox Name="ahj" Width="250" Height="30"></TextBox>
+                <Label Foreground="White" Height="30" Content="sum total"/>
+                <TextBox x:Name="ahj_Copy" Width="250" Height="30"/>
+                <Label Foreground="White" Height="30" Content="Descound"/>
+                <TextBox x:Name="ahj_Copy1" Width="250" Height="30"/>
+                <Label Foreground="White" Height="30" Content="sum"/>
+                <TextBox x:Name="ahj_Copy2" Width="250" Height="30" RenderTransformOrigin="0.498,6.591"/>
 
             </StackPanel>
         </GroupBox>
 
-        <ScrollViewer  Padding="10" Grid.Row="1" Grid.ColumnSpan="3">
-            <GroupBox Header="All Product" Padding="10"  BorderBrush="Brown">
-                <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <ScrollViewer  Padding="10" Grid.Row="1" Grid.ColumnSpan="2" Margin="-30,0,12,0">
+            <GroupBox Header="All Product" Padding="10"  BorderBrush="Brown" Width="606">
+                <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,-3,0"/>
             </GroupBox>
         </ScrollViewer>
 
