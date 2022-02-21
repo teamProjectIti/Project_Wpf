@@ -104,7 +104,6 @@ namespace project_iti_wpf_market
                 pstore.Items.Add(s.Name);
             }
 
-            
         }
     }
 }

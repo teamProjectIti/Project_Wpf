@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:project_iti_wpf_market.Order"
        mc:Ignorable="d"
-          Title="Main Window"  Height="660" Width="1070">
+          Title="Main Window" Loaded="Window_Loaded" Height="660" Width="1070">
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
             <GradientStop Color="Black"/>
@@ -34,31 +34,29 @@
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <GroupBox Foreground="White" Header="User" Grid.Row="0" Grid.Column="0" Width="330" Height="180" BorderBrush="Black">
+        <GroupBox Foreground="White" Header="User" Grid.Row="0" Grid.Column="0" Width="330" BorderBrush="Black" Margin="10,10,10,268" Grid.RowSpan="2">
             <StackPanel>
                 <Label Foreground="White">name user</Label>
-                <TextBox Width="250" Height="20"></TextBox>
+                <TextBox Name="txtnameUser" Width="250" Height="20"></TextBox>
 
                 <Label Foreground="White">phone</Label>
                 <TextBox Name="txtphone" Width="250" Height="20"></TextBox>
 
                 <Label Foreground="White">Address</Label>
                 <TextBox Name="address" Width="250" Height="20"></TextBox>
+                <Label Foreground="White">Email</Label>
+                <TextBox Name="txtEmail" Width="250" Height="20"></TextBox>
 
 
             </StackPanel>
         </GroupBox>
 
-        <GroupBox Foreground="White" Header="details pill" Grid.Row="0" Grid.Column="1" Width="330" Height="180" BorderBrush="Black">
+        <GroupBox Foreground="White" Header="details pill" Grid.Row="0" Grid.Column="1" Width="330" BorderBrush="Black" Margin="10,10,10,268" Grid.RowSpan="2">
             <StackPanel>
                 <Label Foreground="White">name user</Label>
-                <TextBox Width="250" Height="20"></TextBox>
-
-                <Label Foreground="White">phone</Label>
-                <TextBox Name="txtpho" Width="250" Height="20"></TextBox>
-
-                <Label Foreground="White">Address</Label>
-                <TextBox Name="a" Width="250" Height="20"></TextBox>
+                <TextBox Name="txt_casher" Width="250" Height="20"></TextBox>
+                <Label Foreground="White" Content="More Details"/>
+                <TextBox  TextWrapping="Wrap"  x:Name="txtDetails" Width="250" Height="71"/>
 
 
             </StackPanel>
@@ -71,23 +69,23 @@
                 <ComboBox Width="250" Height="30" Margin="24"  Name="compoText" HorizontalAlignment="Left"  VerticalAlignment="Top"/>
 
                 <Label Foreground="White" Height="30">price</Label>
-                <TextBox Name="txtph" Width="250" Height="30"></TextBox>
+                <TextBox Name="txtprice" Width="250" Height="30"></TextBox>
 
                 <Label Foreground="White" Height="30">qountity</Label>
-                <TextBox Name="ahj" Width="250" Height="30"></TextBox>
+                <TextBox Name="txtQountity" Width="250" Height="30"></TextBox>
                 <Label Foreground="White" Height="30" Content="sum total"/>
-                <TextBox x:Name="ahj_Copy" Width="250" Height="30"/>
+                <TextBox Name="txtSum" Width="250" Height="30"/>
                 <Label Foreground="White" Height="30" Content="Descound"/>
-                <TextBox x:Name="ahj_Copy1" Width="250" Height="30"/>
+                <TextBox x:Name="txtdescound" Width="250" Height="30"/>
                 <Label Foreground="White" Height="30" Content="sum"/>
-                <TextBox x:Name="ahj_Copy2" Width="250" Height="30" RenderTransformOrigin="0.498,6.591"/>
+                <TextBox x:Name="txtTotal" Width="250" Height="30" RenderTransformOrigin="0.498,6.591"/>
 
             </StackPanel>
         </GroupBox>
 
-        <ScrollViewer  Padding="10" Grid.Row="1" Grid.ColumnSpan="2" Margin="-30,0,12,0">
-            <GroupBox Header="All Product" Padding="10"  BorderBrush="Brown" Width="606">
-                <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,-3,0"/>
+        <ScrollViewer  Padding="10" Grid.Row="1" Grid.ColumnSpan="2" Margin="-30,50,12,0">
+            <GroupBox Header="All Product" Padding="10"  BorderBrush="Brown" Width="606" Height="238">
+                <DataGrid Name="datagridview" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,-3,0" Height="199"/>
             </GroupBox>
         </ScrollViewer>
 
@@ -98,8 +96,7 @@
             <WrapPanel >
                 <Button Width="100" Margin="10" FontWeight="Bold" Padding="10"   Cursor="Hand" Foreground="Blue" Content="New pill"/>
                 <Button Width="100" Margin="10" FontWeight="Bold" Padding="10"  BorderBrush="DarkGreen" Cursor="Hand" Foreground="Blue">Save</Button>
-                <Button Width="100" Margin="10" FontWeight="Bold" Padding="10"  BorderBrush="DarkGreen" Cursor="Hand" Foreground="Blue">Save</Button>
-                <Button Width="100" Margin="10" FontWeight="Bold" Padding="10"  BorderBrush="DarkGreen" Cursor="Hand" Foreground="Blue">Save</Button>
+                <Button Width="100" Margin="10" FontWeight="Bold" Padding="10"  BorderBrush="DarkGreen" Cursor="Hand" Foreground="Blue" Click="Button_Click">Save</Button>
             </WrapPanel>
         </GroupBox>
 
